@@ -1,0 +1,32 @@
+:root{
+    font-family: monaco,monospace;
+    --Background : #161618;
+    --Primary: #3b3842;
+    --Secondary: #2e1f57;
+    --Accent: #29009c;
+    --Text-Color: #efeff0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    color: var(--Text-Color);
+    background-color: var(--Background);
+}
+
+.grid{
+    display: grid;
+    grid-gap: 10px;
+}
+
+.grid-4-rowcol{
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.box{
+    background-color: var(--Primary);
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
