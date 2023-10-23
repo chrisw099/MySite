@@ -1,32 +1,24 @@
 :root{
-    font-family: monaco,monospace;
-    --Background : #161618;
-    --Primary: #3b3842;
-    --Secondary: #2e1f57;
-    --Accent: #29009c;
-    --Text-Color: #efeff0;
+    font-family: "Trebuchet MS";
+    --Background : #171621;
+    --Primary: #c9c9c9;
+    --Secondary:  #201e2a;
+    --Accent: #4f63eb;
+    --Text-Color: #f5f5f5;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
 }
 
 body{
-    display: flex;
-    justify-content: center;
+    background: var(--Background);
     color: var(--Text-Color);
-    background-color: var(--Background);
+    display: flex;
+    font-size: 1.2rem;
+    justify-content: center;
+    margin: 0;
 }
 
-.grid{
-    display: grid;
-    grid-gap: 10px;
-}
-
-.grid-4-rowcol{
-    grid-template-rows: repeat(4,1fr);
-    grid-template-columns: repeat(4, 1fr);
-}
-
-.box{
-    background-color: var(--Primary);
-    width: 100px;
-    height: 100px;
-    border-radius: 10px;
-}
+/*____ Classes ____*/
